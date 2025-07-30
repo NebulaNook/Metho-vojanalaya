@@ -66,4 +66,103 @@ body{
   margin-top: 10px;
   padding-top: 10px;
   border: 1px solid orangered;
+  width: 400px;
+  background-color: khaki;
+  border-radius: 8px;
 }
+
+.input-btn{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+}
+#btn{
+  width: 65%;
+  border-radius: 8px;
+  background-color: orangered;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.tab:hover {
+  background-color: #d1d1d1;
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.menu-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.menu-price {
+  font-size: 14px;
+  color: #555;
+}
+
