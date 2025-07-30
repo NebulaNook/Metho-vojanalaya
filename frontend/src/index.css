@@ -10,13 +10,60 @@
   font-size: 18px;
   font-weight: bold;
   color: black;
+  margin-left: 10px;
+}
+.link {
+  margin-right: 10px;
+}
+
+.link-items:hover{
+ color: orangered;
 }
 
 .logo{
   margin-left: 10px;
 }
+.logo h1{
+  margin-left: 10px;
+
+ }
 
 body{
   margin: 0;
   padding: 0;
+}
+
+.about{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.about-content{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.paragraph{
+  max-width: 60%;
+  margin-left: 15px;
+  text-align: left;
+  font-size: large;
+}
+.doughimg{
+  height: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid orangered;
+}
+.footer{
+  text-align: center;
+  margin-top: 10px;
+}
+.form{
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border: 1px solid orangered;
 }
