@@ -1,0 +1,22 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link a{
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.logo{
+  margin-left: 10px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
