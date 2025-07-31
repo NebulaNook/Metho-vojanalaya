@@ -13,14 +13,14 @@ export default function Footer() {
             reserved
           </p>
         </div>
-        <div className="link" style={{marginBottom: "10px",}}>
-          <Link to="/" className="link-items">
+        <div className="footer-links" style={{marginBottom: "10px",}}>
+          <Link to="/" className="footer-link">
             Home
           </Link>
-          <Link to="/contact" className="link-items">
+          <Link to="/contact" className="footer-link">
             Contact
           </Link>
-          <Link to="/menu" className="link-items">
+          <Link to="/menu" className="footer-link">
             Menu
           </Link>
         </div>

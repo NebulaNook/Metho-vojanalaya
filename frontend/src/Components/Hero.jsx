@@ -5,7 +5,7 @@ export default function Hero() {
         <img
           src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg
 "
-          alt=""
+          alt="ambition of hotel" className="hero-image"
         />
       </div>
     </>
