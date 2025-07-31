@@ -1,168 +1,272 @@
-.navbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.link a{
-  text-decoration: none;
-  margin-right: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
-  margin-left: 10px;
-}
-.link {
-  margin-right: 10px;
-}
-
-.link-items:hover{
- color: orangered;
-}
-
-.logo{
-  margin-left: 10px;
-}
-.logo h1{
-  margin-left: 10px;
-
- }
-
+/* whole body */
 body{
   margin: 0;
   padding: 0;
 }
-
-.about{
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.about-content{
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.paragraph{
-  max-width: 60%;
-  margin-left: 15px;
-  text-align: left;
-  font-size: large;
-}
-.doughimg{
-  height: 300px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 8px;
-  object-fit: cover;
-  border: 2px solid orangered;
-}
-.footer{
-  text-align: center;
-  margin-top: 10px;
-}
-.form{
-  text-align: center;
-  margin-top: 10px;
-  padding-top: 10px;
-  border: 1px solid orangered;
-  width: 400px;
-  background-color: khaki;
-  border-radius: 8px;
-}
-
-.input-btn{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 5px;
-  outline: none;
-  font-size: 18px;
-  border-radius: 5px;
-  border: none;
-}
-#btn{
-  width: 65%;
-  border-radius: 8px;
-  background-color: orangered;
-  border: none;
-  margin-bottom: 10px;
-}
-
-.container {
-  max-width: 600px;
-  margin: auto;
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.tabs {
+/* navbar */
+.navbar {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
 }
-
-.tab {
-  flex: 1;
-  margin: 0 5px;
-  padding: 10px;
-  background: #e0e0e0;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.2s;
-}
-
-.tab:hover {
-  background-color: #d1d1d1;
-}
-
-.tab.active {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.menu-list {
-  list-style: none;
-  padding: 0;
+/* brand name */
+.logo h1 {
+  font-size: 24px;
   margin: 0;
 }
 
-.menu-item {
+.link {
   display: flex;
-  align-items: center;
   gap: 15px;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
 }
 
-.menu-img {
-  width: 80px;
-  height: 80px;
+.link a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.link-items:hover {
+  color: orangered;
+}
+
+/* responsive navbar */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .link {
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .link a {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+}
+/* hero content */
+.hero {
+  width: 100%;
+  overflow: hidden;
+  border-top: 2px solid orangered;
+}
+/* hero img */
+.hero-image {
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 8px;
+  display: block;
+  max-height: 500px;
 }
 
-.menu-info {
+/* hero responsive */
+@media screen and (max-width: 768px) {
+  .hero-image {
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-image {
+    max-height: 200px;
+  }
+}
+/* about section */
+.about {
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 1200px;
+}
+/* about content  */
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+/* about paragrapgh */
+.paragraph {
+  flex: 1 1 300px;
+  max-width: 600px;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 10px;
+}
+/* about img */
+.doughimg {
+  flex: 1 1 300px;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid orangered;
+  margin: 0 10px;
+  width: 100%;
+}
+/* footer */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fdfdfd;
+}
+/* footer items */
+.footer-items {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.menu-name {
-  font-size: 16px;
+/* contact form */
+.form {
+  text-align: center;
+  margin: 10px auto 0 auto;
+  padding: 15px 20px;
+  border: 1px solid orangered;
+  width: 400px;
+  max-width: 90vw;   
+  background-color: khaki;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+/* contact form input btn */
+.input-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+/* submit btn */
+#btn {
+  width: 65%;
+  max-width: 250px;
+  border-radius: 8px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  margin: 15px auto 10px auto;
+  font-weight: bold;
+}
+
+
+/* conatct responsive*/
+@media (max-width: 480px) {
+  .form {
+    width: 95vw;
+    padding: 15px 15px;
+  }
+
+  #btn {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* menu conatiner */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* menu heading */
+.container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Btn Time */
+.btn-time {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* button styling */
+.btn-time button {
+  padding: 10px 25px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* active btn */
+.btn-time button.active {
+  background-color: orangered;
+  border-color: orangered;
+  color: white;
+}
+
+/* Menu data styling */
+.menu-data {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* menu card */
+.card {
+  padding: 15px 20px;
+  border: 1px solid orangered;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fff;
+}
+
+
+/* menu name */
+.card h3:first-child {
+  margin-bottom: 10px;
   font-weight: 600;
+  color: #222;
 }
 
-.menu-price {
-  font-size: 14px;
-  color: #555;
+/* menu price */
+.card h3:last-child {
+  font-weight: 500;
+  color: orangered;
 }
 
+/* menu responsive */
+@media (max-width: 480px) {
+  .btn-time {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-time button {
+    width: 100%;
+    padding: 12px 0;
+  }
+}

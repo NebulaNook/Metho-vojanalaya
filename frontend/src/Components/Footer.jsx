@@ -3,10 +3,10 @@ export default function Footer() {
   return (
     <>
       <div className="footer">
-        <hr  style={{marginTop: "10px",
+        <hr  style={{marginTop: "20px",
           border: "1px solid orangered",
         }}/>
-        <div>
+        <div className="footer-items">
           <p style={{fontWeight: "bold",}}>
             &copy; 2025 Metho
             <span style={{ color: "orangered" }}>Vojanalaya</span>. All rights
